@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;  
+ animation-delay: 1s;
+  animation-fill-mode: both;
+}
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframesslidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
